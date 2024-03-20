@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <ul>
+            {% for U in usuarios %}
+            <li>
+                {{U.nome}} - <a href="/usuarios/update/{{U.id}}">Editar</a>
+                 <a href="/usuarios/delete/{{U.id}}">Excluir</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

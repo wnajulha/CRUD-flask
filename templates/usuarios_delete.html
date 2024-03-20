@@ -1,0 +1,9 @@
+<html>
+    <body>
+        Você tem certeza que deseja excluir o usuario {{U.nome}}?
+        <form method="post" action="/usuarios/delete/{{U.id}}">
+            <input type="submit" value="Sim">
+        </form>
+        <a href="/usuarios/recovery">Cancelar</a>
+    </body>
+</html>
